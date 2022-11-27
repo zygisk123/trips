@@ -26,7 +26,7 @@ get_header();
 				<thead>
 					<tr>
 						<th>Month</th>
-						<th>Distance</th>
+						<th>Distance (km)</th>
 						<th>Max people allowed</th>
 						<th>With Animals</th>
 					</tr>
@@ -48,7 +48,7 @@ get_header();
 											<?=get_field('max_people_allowed', get_the_ID())?>
 										</td>  
 										<td class="withAnimals">
-											<?=get_field('with_animals', get_the_ID())?>
+											<?=(get_field('with_animals', get_the_ID()))? "yes": "no"?>
 										</td>  
 									</tr>
 								</div>
